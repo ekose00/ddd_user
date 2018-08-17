@@ -6,5 +6,8 @@ export default {
     },
     post: async (url, body) => {
         return axios.post(url, body);
+    },
+    delete: async (url, params) => {
+        return axios.delete(`${url}/${params}`);
     }
 }

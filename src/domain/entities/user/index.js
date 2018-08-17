@@ -1,7 +1,7 @@
 import Joi from 'joi'
 import validate from '../../../helpers/validate'
 
-export default class Cart {
+export default class User {
     constructor({id, name, age, gender}){
         this.id = id;
         this.name = name;

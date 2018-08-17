@@ -8,6 +8,10 @@ export default {
             id: 'user.failed.insert',
             value: 'Could not insert user'
         },
+        failedDelete: {
+            id: 'user.failed.delete',
+            value: 'Could not delete user'
+        },
         status: {
             ACTIVE: 1
         }
