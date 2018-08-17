@@ -12,6 +12,10 @@ export default {
             id: 'user.failed.delete',
             value: 'Could not delete user'
         },
+        failedAlter:{
+            id: 'user.failed.alter',
+            value: 'Could not alter user'
+        },
         status: {
             ACTIVE: 1
         }

@@ -31,4 +31,12 @@ export default class User extends Database {
         return result;
     }
 
+    async alter(id,user){
+        const connection = await this.getConnection();
+        let result = await connection.getRepository('Usuario')
+            .update(id,new UserModel(user))
+        await connection.dispose();
+        return result;
+    }
+
 }
