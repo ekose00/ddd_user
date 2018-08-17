@@ -5,9 +5,9 @@ import router from './infrasctructure/routers'
 const PORT = 3000;
 const app = express();
 
-app.use('/api/v1/user', router.userRouter());
-
 app.use(bodyParser.json());
+
+app.use('/api/v1/user', router.userRouter());
 
 app.listen(PORT, () => {
     console.log(`Listening on PORT: ${PORT}`)

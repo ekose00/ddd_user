@@ -1,5 +1,5 @@
-import UserModel from '../../../domain/entities/user'
 import Database from '../database'
+import UserModel from '../../../domain/entities/user'
 
 // TYPEORM vem aqui.
 
@@ -14,4 +14,15 @@ export default class User extends Database {
         await connection.dispose();
         return result; 
     }
+
+    async save(user) {
+        const connection = await this.getConnection()
+        let result = await connection.getRepository('Usuario')
+          .save(new UserModel(user))
+        await connection.dispose();
+        return result
+      }
+    
+
+    async 
 }
